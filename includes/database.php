@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "root"; // Your MySQL username
-$password = ""; // Your MySQL password (leave blank if you don't have one)
+$user = "root"; // 
+$password = ""; // 
 $database = "erp_system";
 
 // Create the connection

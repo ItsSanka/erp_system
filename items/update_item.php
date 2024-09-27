@@ -1,6 +1,8 @@
+<?php include('../includes/navbar.php'); ?>
 <?php
 session_start();
 include('../includes/database.php');
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $item_id = $_POST['item_id'];
@@ -42,6 +44,7 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <title>Update Item</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
 <div class="container">
