@@ -41,17 +41,17 @@ This project is a simple ERP system built using PHP and MySQL that allows you to
 
 ## Database Setup
 
-1. Import the provided SQL file (`database.sql`) into your MySQL database:
+1. Import the provided SQL file (`erp_system.sql`) into your MySQL database:
    - You can do this through PHPMyAdmin or using the MySQL command line:
      ```bash
-     mysql -u your_username -p your_database_name < database.sql
+     mysql -u root -p erp_system < erp_system.sql
      ```
    - This will create the `customers`, `items`, `invoices`, and `invoice_items` tables.
   
 2. Update the `includes/database.php` file to match your local MySQL settings:
    ```php
    <?php
-   $conn = new mysqli('localhost', 'your_username', 'your_password', 'your_database_name');
+   $conn = new mysqli('localhost', 'root', '', 'erp_system');
    
    if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
@@ -63,12 +63,12 @@ This project is a simple ERP system built using PHP and MySQL that allows you to
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/erp-system.git
+   git clone https://github.com/ItsSanka/erp_system.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd erp-system
+   cd erp_system
    ```
 
 3. **Set up the database connection**:
@@ -77,7 +77,7 @@ This project is a simple ERP system built using PHP and MySQL that allows you to
 4. **Serve the project**:
    If using XAMPP or WAMP, place the project folder inside the `htdocs` directory. Then, start your Apache and MySQL services. Access the project by navigating to:
    ```
-   http://localhost/erp-system
+   http://localhost/erp_system
    ```
 
 5. **Import the database**:
