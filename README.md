@@ -77,7 +77,7 @@ This project is a simple ERP system built using PHP and MySQL that allows you to
 4. **Serve the project**:
    If using XAMPP or WAMP, place the project folder inside the `htdocs` directory. Then, start your Apache and MySQL services. Access the project by navigating to:
    ```
-   http://localhost/erp_system
+   http://localhost/erp_system/dashboard.php
    ```
 
 5. **Import the database**:
